@@ -9,6 +9,7 @@ app.get("/api/test-shell", (req,res,next) =>{
     shell.exec('git status')
     shell.exec('git commit -m "auto commit from server"')
     shell.exec('git push -u origin master')
+    shell.echo('Commit complete!')
 })
 
 
